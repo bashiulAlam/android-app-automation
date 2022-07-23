@@ -1,5 +1,6 @@
 package com.assignment.test;
 
+import com.assignment.pom.BasePage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
