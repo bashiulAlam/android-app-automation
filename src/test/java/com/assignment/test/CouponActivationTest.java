@@ -7,9 +7,6 @@ import org.junit.jupiter.api.*;
 import java.net.MalformedURLException;
 
 public class CouponActivationTest extends BaseTest {
-    /*public CouponActivationTest() {
-        super("http://localhost:4723/wd/hub");
-    }*/
 
     public CouponCenterPage couponCenterPage;
 

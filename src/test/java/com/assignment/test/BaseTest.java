@@ -14,12 +14,6 @@ public class BaseTest {
 
     public static AppiumDriver appiumDriver;
 
-    private static String url = "";
-
-    /*public BaseTest(String url) {
-        BaseTest.url = url;
-    }*/
-
     public static void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
@@ -33,9 +27,6 @@ public class BaseTest {
         capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
 
         appiumDriver = new AppiumDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
-
-        //String title = page.getInstance(CouponCenterPage.class).getCouponCenterTitle();
-        //System.out.println("title " + title);
     }
 
     public static void tearDown() {
