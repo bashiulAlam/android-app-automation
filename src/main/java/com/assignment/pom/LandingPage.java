@@ -17,11 +17,19 @@ public class LandingPage extends BasePage {
     @AndroidFindBy(className = "android.widget.TextView")
     RemoteWebElement titleBar;
 
+    @AndroidFindBy(id = "main_feed_dest")
+    WebElement feed;
+
     public void openCouponCenter() {
         couponCenter.click();
     }
 
     public String getCouponCenterTitle() {
         return titleBar.getText();
+    }
+
+    public void goToFeedAndOpenCouponCenter() {
+        feed.click();
+        couponCenter.click();
     }
 }
