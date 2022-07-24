@@ -20,11 +20,13 @@ public class CouponActivationTest extends BaseTest {
 
     private static final Logger log = LogManager.getLogger(CouponActivationTest.class.getName());
 
+    // set up appium driver and start it
     @BeforeAll
     public static void setUp() {
         BaseTest.setUp();
     }
 
+    // open the coupon center
     @Test
     @Order(1)
     public void Test_001_openCouponCenter() {
@@ -35,6 +37,9 @@ public class CouponActivationTest extends BaseTest {
         Assertions.assertEquals(Constants.COUPON_CENTER_UI_TITLE, title);
     }
 
+    // check coupons one by one and activate the first available one
+    // validation is done using the number of activated and non-activated coupons before and after the activation
+    // this difference should be 1
     @Test
     @Order(2)
     public void Test_002_filterAndActivateCoupon() {
@@ -57,11 +62,14 @@ public class CouponActivationTest extends BaseTest {
 
         int nonActivatedCouponCountDiff = Math.abs(activationCountsAfter[0] - activationCountsBefore[0]);
         int activatedCouponCountDiff = Math.abs(activationCountsAfter[1] - activationCountsBefore[1]);
+        log.info("Number of coupons moved from non-activated state : " + nonActivatedCouponCountDiff);
+        log.info("Number of coupons moved to activated state : " + activatedCouponCountDiff);
 
         Assertions.assertEquals(1, activatedCouponCountDiff);
         Assertions.assertEquals(1, nonActivatedCouponCountDiff);
     }
 
+    // stop appium driver
     @AfterAll
     public static void tearDown() {
         BaseTest.tearDown();

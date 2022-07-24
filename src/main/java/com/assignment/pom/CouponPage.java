@@ -56,7 +56,7 @@ public class CouponPage extends BasePage {
         log.info("Activated coupon tab title : " + tabTitles.get(2).getText());
         int notActivatedCount = Utils.parseTabTitle(tabTitles.get(1).getText());
         int activatedCount = Utils.parseTabTitle(tabTitles.get(2).getText());
-        return new int[] {notActivatedCount, activatedCount};
+        return new int[]{notActivatedCount, activatedCount};
     }
 
     public int[] getActivatedCouponCountFromCouponDetails() {
@@ -64,7 +64,7 @@ public class CouponPage extends BasePage {
         log.info("Activated coupon tab title : " + tabTitles.get(3).getText());
         int notActivatedCount = Utils.parseTabTitle(tabTitles.get(2).getText());
         int activatedCount = Utils.parseTabTitle(tabTitles.get(3).getText());
-        return new int[] {notActivatedCount, activatedCount};
+        return new int[]{notActivatedCount, activatedCount};
     }
 
     public void clickFilterButton() {
@@ -85,9 +85,9 @@ public class CouponPage extends BasePage {
             log.info("total coupon available : " + coupons.size());
             coupons.get(i).click();
             //WebDriverWait wait = new WebDriverWait(appiumDriver, Duration.ofMillis(15000));
-            appiumDriver.manage().timeouts().implicitlyWait(ofMillis(15000));
-            if (titleBarTexts.get(0).getText().equals(Constants.FILTER_UI_TITLE))
-                submitFilter.click();
+            //appiumDriver.manage().timeouts().implicitlyWait(ofMillis(15000));
+            //if (titleBarTexts.get(0).getText().equals(Constants.FILTER_UI_TITLE))
+            submitFilter.click();
 
             //appiumDriver.manage().timeouts().implicitlyWait(ofMillis(5000));
 
