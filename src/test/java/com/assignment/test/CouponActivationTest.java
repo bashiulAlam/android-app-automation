@@ -5,7 +5,6 @@ import com.assignment.pom.LandingPage;
 import com.assignment.utils.Constants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -32,11 +31,10 @@ public class CouponActivationTest extends BaseTest {
         LandingPage landingPage = new LandingPage(appiumDriver);
         landingPage.openCouponCenter();
         String title = landingPage.getCouponCenterTitle();
-        log.info("coupon center title : " + title);
+        log.info("Coupon center title : " + title);
         Assertions.assertEquals(Constants.COUPON_CENTER_UI_TITLE, title);
     }
 
-    @Ignore
     @Test
     @Order(2)
     public void Test_002_filterAndActivateCoupon() {
@@ -47,9 +45,9 @@ public class CouponActivationTest extends BaseTest {
         log.info("Filter UI title : " + title);
         Assertions.assertEquals(Constants.FILTER_UI_TITLE, title);
 
-        log.info("not activated count : " + activationCounts[0]);
-        log.info("activated count : " + activationCounts[1]);
-        log.info("total coupon available : " + couponPage.getCoupons());
+        log.info("Total not activated coupon count : " + activationCounts[0]);
+        log.info("Total activated count : " + activationCounts[1]);
+        log.info("Total coupon services available : " + couponPage.getCoupons());
         couponPage.openSelectedCoupon(Integer.parseInt(Constants.COUPON_FILTER_START_INDEX));
 
         int[] activationCountsBefore = couponPage.getActivatedCouponCountFromCouponDetails();
