@@ -1,6 +1,7 @@
 package com.assignment.test;
 
 import com.assignment.pom.BasePage;
+import com.assignment.utils.Constants;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -17,17 +18,17 @@ public class BaseTest {
 
     public static void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "My Device");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "de.payback.client.android");
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "de.payback.app.deeplinks.StarterActivity");
+        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, Constants.AUTOMATION_NAME);
+        capabilities.setCapability("platformName", Constants.PLATFORM_NAME);
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, Constants.DEVICE_NAME);
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, Constants.PLATFORM_VERSION);
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, Constants.APP_PACKAGE);
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, Constants.APP_ACTIVITY);
         capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
         capabilities.setCapability(AndroidMobileCapabilityType.SKIP_DEVICE_INITIALIZATION, true);
         capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
 
-        appiumDriver = new AppiumDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
+        appiumDriver = new AppiumDriver(new URL(Constants.APPIUM_SERVER), capabilities);
     }
 
     public static void tearDown() {

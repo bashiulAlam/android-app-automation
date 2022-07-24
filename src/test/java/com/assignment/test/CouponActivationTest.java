@@ -2,6 +2,7 @@ package com.assignment.test;
 
 import com.assignment.pom.CouponPage;
 import com.assignment.pom.LandingPage;
+import com.assignment.utils.Constants;
 import org.junit.Ignore;
 import org.junit.jupiter.api.*;
 
@@ -23,7 +24,7 @@ public class CouponActivationTest extends BaseTest {
         landingPage.openCouponCenter();
         String title = landingPage.getCouponCenterTitle();
         System.out.println("coupon center title : " + title);
-        Assertions.assertEquals("Coupons", title);
+        Assertions.assertEquals(Constants.COUPON_CENTER_UI_TITLE, title);
     }
 
     @Test
@@ -35,7 +36,7 @@ public class CouponActivationTest extends BaseTest {
         System.out.println("not activated count : " + activationCounts[0]);
         System.out.println("activated count : " + activationCounts[1]);
         System.out.println("total coupon available : " + couponPage.getCoupons());
-        couponPage.openSelectedCoupon(10);
+        couponPage.openSelectedCoupon(Integer.parseInt(Constants.COUPON_FILTER_START_INDEX));
 
         int[] activationCountsBefore = couponPage.getActivatedCouponCountFromCouponDetails();
         appiumDriver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
