@@ -16,6 +16,8 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     //testImplementation group: 'org.testng', name: 'testng', version: '6.14.3'
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.18.0'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.18.0'
 }
 
 test {

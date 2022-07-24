@@ -1,0 +1,10 @@
+2022-07-24 11:44:40.842 [Test worker] INFO  com.assignment.test.CouponActivationTest - coupon center title : Coupons
+2022-07-24 12:00:10.534 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+2022-07-24 12:00:15.985 [Test worker] INFO  com.assignment.test.CouponActivationTest - coupon center title : Coupons
+2022-07-24 12:00:17.367 [Test worker] INFO  com.assignment.pom.CouponPage - Nicht aktiviert (43)
+2022-07-24 12:00:18.427 [Test worker] INFO  com.assignment.pom.CouponPage - Aktiviert (15)
+2022-07-24 12:00:21.267 [Test worker] INFO  com.assignment.test.CouponActivationTest - not activated count : 43
+2022-07-24 12:00:21.267 [Test worker] INFO  com.assignment.test.CouponActivationTest - activated count : 15
+2022-07-24 12:00:21.523 [Test worker] INFO  com.assignment.test.CouponActivationTest - total coupon available : 35
+2022-07-24 12:00:21.854 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 5
+total coupon available : 35
