@@ -51,8 +51,7 @@
 
 ## Report and Logging
 1. If you run the project from your IDE you can see the results from your IDE console
-2. As we are using *gradle* we will have an HTML report generated after every run which can be found here: *{project_root}/build/reports/tests/test/index.html*
-   ![](D:\IntelliJ Projects\Android-App-Automation\Test Results.png)
+2. As we are using *gradle* we will have an HTML report generated after every run which can be found here: *{project_root}/build/reports/tests/test/index.html*`
 3. We have logging enabled for better visualization and ease of troubleshooting in case of any error. Log file can be found here: *{project_root}/logs*
 
 ## Observations
