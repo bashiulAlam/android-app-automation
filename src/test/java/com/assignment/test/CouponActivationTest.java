@@ -1,8 +1,12 @@
 package com.assignment.test;
 
+import com.assignment.bdd.GivenSomeState;
+import com.assignment.bdd.ThenSomeOutcome;
+import com.assignment.bdd.WhenSomeAction;
 import com.assignment.pom.CouponPage;
 import com.assignment.pom.LandingPage;
 import com.assignment.utils.Constants;
+import com.tngtech.jgiven.junit.ScenarioTest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Rule;
@@ -14,7 +18,7 @@ import java.time.Duration;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @ExtendWith(com.assignment.test.TestName.class)
-public class CouponActivationTest extends BaseTest {
+public class CouponActivationTest extends BaseTest, ScenarioTest<GivenSomeState, WhenSomeAction, ThenSomeOutcome> {
     @Rule
     TestName testName = new TestName();
 
