@@ -15,4 +15,5 @@ public class Constants {
 
     //other constants
     public static final String COUPON_CENTER_UI_TITLE = "Coupons";
+    public static final String FILTER_UI_TITLE = "Filter";
 }

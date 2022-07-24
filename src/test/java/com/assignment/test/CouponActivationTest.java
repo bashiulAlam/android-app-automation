@@ -6,13 +6,18 @@ import com.assignment.utils.Constants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Ignore;
+import org.junit.Rule;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.rules.TestName;
 
-import java.net.MalformedURLException;
 import java.time.Duration;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(com.assignment.test.TestName.class)
 public class CouponActivationTest extends BaseTest {
+    @Rule
+    TestName testName = new TestName();
 
     private static final Logger log = LogManager.getLogger(CouponActivationTest.class.getName());
 
@@ -31,12 +36,17 @@ public class CouponActivationTest extends BaseTest {
         Assertions.assertEquals(Constants.COUPON_CENTER_UI_TITLE, title);
     }
 
+    @Ignore
     @Test
     @Order(2)
-    public void Test_002_filterCoupon() {
+    public void Test_002_filterAndActivateCoupon() {
         CouponPage couponPage = new CouponPage(appiumDriver);
         int[] activationCounts = couponPage.getActivatedCouponCountFromCouponCenter();
         couponPage.clickFilterButton();
+        String title = couponPage.getFilterUITitle();
+        log.info("Filter UI title : " + title);
+        Assertions.assertEquals(Constants.FILTER_UI_TITLE, title);
+
         log.info("not activated count : " + activationCounts[0]);
         log.info("activated count : " + activationCounts[1]);
         log.info("total coupon available : " + couponPage.getCoupons());
@@ -54,25 +64,8 @@ public class CouponActivationTest extends BaseTest {
         Assertions.assertEquals(1, nonActivatedCouponCountDiff);
     }
 
-    /*@Test
-    @Order(3)
-    public void Test_003_activateCoupon() {
-        CouponPage couponPage = new CouponPage(appiumDriver);
-        int[] activationCountsBefore = couponPage.getActivatedCouponCountFromCouponDetails();
-        //couponPage.activateCoupon();
-        appiumDriver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
-        couponPage.openActiveCouponList();
-        int[] activationCountsAfter = couponPage.getActivatedCouponCountFromCouponDetails();
-
-        int nonActivatedCouponCountDiff = Math.abs(activationCountsAfter[0] - activationCountsBefore[0]);
-        int activatedCouponCountDiff = Math.abs(activationCountsAfter[1] - activationCountsBefore[1]);
-
-        Assertions.assertEquals(1, activatedCouponCountDiff);
-        Assertions.assertEquals(1, nonActivatedCouponCountDiff);
-    }*/
-
-    /*@AfterAll
+    @AfterAll
     public static void tearDown() {
         BaseTest.tearDown();
-    }*/
+    }
 }

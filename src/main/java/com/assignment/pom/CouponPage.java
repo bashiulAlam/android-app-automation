@@ -1,13 +1,18 @@
 package com.assignment.pom;
 
+import com.assignment.utils.Constants;
 import com.assignment.utils.Utils;
 import io.appium.java_client.*;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 import static java.time.Duration.ofMillis;
@@ -18,6 +23,9 @@ public class CouponPage extends BasePage {
     public CouponPage(AppiumDriver appiumDriver) {
         super(appiumDriver);
     }
+
+    @AndroidFindBy(className = "android.widget.TextView")
+    List<RemoteWebElement> titleBarTexts;
 
     @AndroidFindBy(id = "filter_button")
     RemoteWebElement filterButton;
@@ -44,16 +52,16 @@ public class CouponPage extends BasePage {
     List<WebElement> activationBar;
 
     public int[] getActivatedCouponCountFromCouponCenter() {
-        log.info(tabTitles.get(1).getText());
-        log.info(tabTitles.get(2).getText());
+        log.info("Not activated coupon tab title : " + tabTitles.get(1).getText());
+        log.info("Activated coupon tab title : " + tabTitles.get(2).getText());
         int notActivatedCount = Utils.parseTabTitle(tabTitles.get(1).getText());
         int activatedCount = Utils.parseTabTitle(tabTitles.get(2).getText());
         return new int[] {notActivatedCount, activatedCount};
     }
 
     public int[] getActivatedCouponCountFromCouponDetails() {
-        log.info(tabTitles.get(2).getText());
-        log.info(tabTitles.get(3).getText());
+        log.info("Not activated coupon tab title : " + tabTitles.get(2).getText());
+        log.info("Activated coupon tab title : " + tabTitles.get(3).getText());
         int notActivatedCount = Utils.parseTabTitle(tabTitles.get(2).getText());
         int activatedCount = Utils.parseTabTitle(tabTitles.get(3).getText());
         return new int[] {notActivatedCount, activatedCount};
@@ -63,15 +71,22 @@ public class CouponPage extends BasePage {
         filterButton.click();
     }
 
+    public String getFilterUITitle() {
+        return titleBarTexts.get(0).getText();
+    }
+
     public int getCoupons() {
         return coupons.size();
     }
 
     public void openSelectedCoupon(int index) {
         for (int i = index; i < coupons.size(); i += 2) {
-            log.info("checking coupon no : " + i + "\ntotal coupon available : " + coupons.size());
+            log.info("checking coupon no : " + i);
+            log.info("total coupon available : " + coupons.size());
             coupons.get(i).click();
-            if (submitFilter.isDisplayed())
+            //WebDriverWait wait = new WebDriverWait(appiumDriver, Duration.ofMillis(15000));
+            appiumDriver.manage().timeouts().implicitlyWait(ofMillis(15000));
+            if (titleBarTexts.get(0).getText().equals(Constants.FILTER_UI_TITLE))
                 submitFilter.click();
 
             //appiumDriver.manage().timeouts().implicitlyWait(ofMillis(5000));
