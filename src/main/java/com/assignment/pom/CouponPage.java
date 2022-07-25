@@ -80,6 +80,7 @@ public class CouponPage extends BasePage {
     }
 
     public void openSelectedCoupon(int index) {
+        int availabilityFlag = 0;
         for (int i = index; i < coupons.size(); i += 2) {
             log.info("checking coupon no : " + i);
             log.info("total coupon available : " + coupons.size());
@@ -92,12 +93,13 @@ public class CouponPage extends BasePage {
             //appiumDriver.manage().timeouts().implicitlyWait(ofMillis(5000));
 
             int couponCardCount = getCouponCardsCount();
-            log.info("available coupon count : " + couponCardCount);
+            log.info("available coupon count for activation : " + couponCardCount);
 
             //int activateButtonCount = activateButton.size();
             //log.info("activate button count : " + activateButtonCount);
             if (couponCardCount > 0) {
                 activateButton.get(0).click();
+                availabilityFlag = 1;
                 break;
             }
             //actionFilter.click();
@@ -107,6 +109,9 @@ public class CouponPage extends BasePage {
             clickFilterButton();
             appiumDriver.manage().timeouts().implicitlyWait(ofMillis(5000));
         }
+
+        if (availabilityFlag == 0)
+            log.error("There is no coupon available to activate...");
     }
 
     public int getCouponCardsCount() {

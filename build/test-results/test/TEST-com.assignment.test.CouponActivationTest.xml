@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.assignment.test.CouponActivationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-07-24T14:13:01" hostname="LAPTOP-HMFUJK93" time="74.647">
+<testsuite name="com.assignment.test.CouponActivationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-07-25T07:50:23" hostname="LAPTOP-HMFUJK93" time="69.912">
   <properties/>
-  <testcase name="Test_001_openCouponCenter()" classname="com.assignment.test.CouponActivationTest" time="2.997"/>
-  <testcase name="Test_002_filterAndActivateCoupon()" classname="com.assignment.test.CouponActivationTest" time="71.649"/>
-  <system-out><![CDATA[20:13:01.452 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
-20:13:01.461 [Test worker] INFO  com.assignment.test.TestName - ---------- Test Name :: Test_001_openCouponCenter :: ----------
-20:13:04.442 [Test worker] INFO  com.assignment.test.CouponActivationTest - Coupon center title : Coupons
-20:13:04.459 [Test worker] INFO  com.assignment.test.TestName - ---------- Test Name :: Test_002_filterAndActivateCoupon :: ----------
-20:13:04.802 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (0)
-20:13:07.396 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (18)
-20:13:11.485 [Test worker] INFO  com.assignment.test.CouponActivationTest - Filter UI title : Filter
-20:13:11.486 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total not activated coupon count : 40
-20:13:11.486 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total activated count : 18
-20:13:11.686 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total coupon services available : 35
-20:13:11.898 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 15
-20:13:12.684 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
-20:13:15.993 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
-20:13:25.982 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 17
-20:13:26.130 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
-20:13:32.224 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
-20:13:41.423 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 19
-20:13:41.557 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
-20:13:47.833 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
-20:13:54.464 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 21
-20:13:54.629 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
-20:14:00.638 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
-20:14:07.411 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 23
-20:14:07.485 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
-20:14:09.749 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 1
-20:14:12.583 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (1)
-20:14:12.743 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (0)
-20:14:15.706 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (0)
-20:14:15.834 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (1)
-20:14:17.038 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
+  <testcase name="Test_001_openCouponCenter()" classname="com.assignment.test.CouponActivationTest" time="3.365"/>
+  <testcase name="Test_002_filterAndActivateCoupon()" classname="com.assignment.test.CouponActivationTest" time="66.547"/>
+  <system-out><![CDATA[13:50:23.061 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+13:50:23.087 [Test worker] INFO  com.assignment.test.CouponActivationTest - Test run started at : 25/07/2022 13:50:23
+13:50:23.096 [Test worker] INFO  com.assignment.test.TestName - ---------- Test Name :: Test_001_openCouponCenter :: ----------
+13:50:26.448 [Test worker] INFO  com.assignment.test.CouponActivationTest - Coupon center title : Coupons
+13:50:26.461 [Test worker] INFO  com.assignment.test.TestName - ---------- Test Name :: Test_002_filterAndActivateCoupon :: ----------
+13:50:28.604 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (21)
+13:50:28.849 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (15)
+13:50:32.967 [Test worker] INFO  com.assignment.test.CouponActivationTest - Filter UI title : Filter
+13:50:32.967 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total not activated coupon count : 21
+13:50:32.967 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total activated count : 15
+13:50:33.153 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total coupon services available : 35
+13:50:33.322 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 15
+13:50:33.942 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+13:50:37.033 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
+13:50:52.294 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 17
+13:50:52.600 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+13:50:58.684 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
+13:51:03.848 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 19
+13:51:03.950 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+13:51:09.950 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
+13:51:14.785 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 21
+13:51:14.886 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+13:51:20.883 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
+13:51:25.347 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 23
+13:51:25.429 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+13:51:27.818 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 1
+13:51:29.235 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (1)
+13:51:29.388 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (0)
+13:51:32.143 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (0)
+13:51:32.752 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (1)
+13:51:33.004 [Test worker] INFO  com.assignment.test.CouponActivationTest - Number of coupons moved from non-activated state : 1
+13:51:33.006 [Test worker] INFO  com.assignment.test.CouponActivationTest - Number of coupons moved to activated state : 1
+13:51:33.737 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation

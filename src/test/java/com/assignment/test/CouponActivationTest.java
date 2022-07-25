@@ -3,6 +3,7 @@ package com.assignment.test;
 import com.assignment.pom.CouponPage;
 import com.assignment.pom.LandingPage;
 import com.assignment.utils.Constants;
+import com.assignment.utils.Utils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Rule;
@@ -24,6 +25,7 @@ public class CouponActivationTest extends BaseTest {
     @BeforeAll
     public static void setUp() {
         BaseTest.setUp();
+        log.info("Test run started at : " + Utils.getCurrentTime());
     }
 
     // open the coupon center

@@ -38,7 +38,7 @@
 ## Before You Run
 - Open the **config.properties** file from the path: *src/main/resources* and set the required variables here:
     1. Set the android version of the device that you will use to run the project
-    2. Set the *appium server URL* if it is not running from your local machine
+    2. Set the *appium server URL* if it is not running from your local machine and make sure *appium server* is running
     3. Set the index variable to the value from which you want to check the coupons from; ideally the value should be greater than 12
 
 ## How to Run
@@ -58,4 +58,4 @@
 1. The coupons do not have any distinguishable id which can be used in the automation. That is why *REWE* coupons were not easy to differentiate from others. The implementation was designed such way that we open coupon center and look for an available non-activated coupon one by one. When we find one available we activate and check the count of activated coupon increase to validate
 2. The app crashes some time in regular UI transition
 3. The app closes if we press back button from coupon center or opened coupon UI
-4. The app transition sometimes gets slow and we get error like *element is not present in DOM*
+4. The app transition sometimes gets slow and we get error like *element is not present in DOM*, I guess this happens when the network connectivity fluctuates
