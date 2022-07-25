@@ -38,8 +38,9 @@
 ## Before You Run
 - Open the **config.properties** file from the path: *src/main/resources* and set the required variables here:
     1. Set the android version of the device that you will use to run the project
-    2. Set the *appium server URL* if it is not running from your local machine and make sure *appium server* is running
+    2. Set the *appium server URL* if it is not running from your local machine
     3. Set the index variable to the value from which you want to check the coupons from; ideally the value should be greater than 12
+- Start the *appium server*
 
 ## How to Run
 - You can run the project from your IDE by following the steps:
