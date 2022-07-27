@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CouponActivationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CouponActivationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.assignment.test.html">com.assignment.test</a> &gt; CouponActivationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">29.903s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">50%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Activate available coupon"></a>
+<h3 class="failures">Activate available coupon</h3>
+<span class="code">
+<pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at com.assignment.utils.Utils.parseTabTitle(Utils.java:9)
+	at com.assignment.pom.CouponPage.getActivatedCouponCountFromCouponDetails(CouponPage.java:65)
+	at com.assignment.stepDefinition.StepDefinitions.userChecksAvailableCouponThatCanBeActivatedAndTapsOnTheActivateButton(StepDefinitions.java:73)
+	at ✽.User checks available coupon that can be activated and taps on the activate button(file:///D:/IntelliJ%20Projects/Android-App-Automation/Feature/ActivateCoupon.feature:9)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Activate available coupon</td>
+<td class="failures">23.738s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Open Coupon Center</td>
+<td class="success">6.165s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22:43:57.005 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+22:43:57.019 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run started at : 27/07/2022 22:43:57
+
+Scenario: Open Coupon Center             # Feature/ActivateCoupon.feature:3
+  When User taps on coupon center button # com.assignment.stepDefinition.StepDefinitions.userTapsOnCouponCenterButton()
+22:44:03.198 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Coupon center title : Coupons
+  Then Coupon center UI is loaded        # com.assignment.stepDefinition.StepDefinitions.couponCenterUIIsLoaded()
+
+Scenario: Activate available coupon                                                       # Feature/ActivateCoupon.feature:7
+22:44:03.437 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (30)
+22:44:03.577 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (16)
+22:44:03.900 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total not activated coupon count : 30
+22:44:03.900 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total activated count : 16
+22:44:04.109 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total coupon services available : 15
+22:44:07.256 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Filter UI title : Filter
+  Given User has opened coupon filter UI                                                  # com.assignment.stepDefinition.StepDefinitions.userHasOpenedCouponFilterUI()
+22:44:07.434 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 15
+22:44:07.603 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+22:44:10.076 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+22:44:14.936 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 17
+22:44:15.094 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+22:44:21.142 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+22:44:25.650 [Test worker] ERROR com.assignment.pom.CouponPage - There is no coupon available to activate...
+22:44:26.541 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Beliebteste Partner mit Coupons
+22:44:26.733 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Partner mit Coupons
+  When User checks available coupon that can be activated and taps on the activate button # com.assignment.stepDefinition.StepDefinitions.userChecksAvailableCouponThatCanBeActivatedAndTapsOnTheActivateButton()
+      java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1967)
+	at com.assignment.utils.Utils.parseTabTitle(Utils.java:9)
+	at com.assignment.pom.CouponPage.getActivatedCouponCountFromCouponDetails(CouponPage.java:65)
+	at com.assignment.stepDefinition.StepDefinitions.userChecksAvailableCouponThatCanBeActivatedAndTapsOnTheActivateButton(StepDefinitions.java:73)
+	at âœ½.User checks available coupon that can be activated and taps on the activate button(file:///D:/IntelliJ%20Projects/Android-App-Automation/Feature/ActivateCoupon.feature:9)
+
+  Then Coupon has been activated                                                          # com.assignment.stepDefinition.StepDefinitions.couponHasBeenActivated()
+22:44:27.577 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
+22:44:27.577 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 27/07/2022 22:44:27
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+?????????????????????????????????????????????????????????????????????????????????????
+? Share your Cucumber Report with your team at https://reports.cucumber.io          ?
+? Activate publishing with one of the following:                                    ?
+?                                                                                   ?
+? src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    ?
+? src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    ?
+? Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    ?
+? JUnit:                                           @CucumberOptions(publish = true) ?
+?                                                                                   ?
+? More information at https://cucumber.io/docs/cucumber/environment-variables/      ?
+?                                                                                   ?
+? Disable this message with one of the following:                                   ?
+?                                                                                   ?
+? src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      ?
+? src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      ?
+?????????????????????????????????????????????????????????????????????????????????????
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at Jul 27, 2022 10:44:28 PM</p>
+</div>
+</div>
+</body>
+</html>

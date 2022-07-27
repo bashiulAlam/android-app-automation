@@ -20,6 +20,8 @@ dependencies {
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.18.0'
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.4.1'
     implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.4.1'
+    testImplementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.8.2'
+
 }
 
 test {

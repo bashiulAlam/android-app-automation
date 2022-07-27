@@ -20,6 +20,7 @@ public class StepDefinitions extends BaseTest {
     private static final Logger log = LogManager.getLogger(StepDefinitions.class.getName());
     public int[] activationCountsBefore = new int[2];
     public int[] activationCountsAfter = new int[2];
+    public int[] activationCounts = new int[2];
 
     @BeforeAll
     public static void setUp() {
@@ -32,6 +33,9 @@ public class StepDefinitions extends BaseTest {
         BaseTest.tearDown();
         log.info("Test run ended at : " + Utils.getCurrentTime());
     }
+
+    /*@Given("^User is logged in$")
+    public void userIdLoggedIn() {}*/
 
     @When("^User taps on coupon center button$")
     public void userTapsOnCouponCenterButton() {
@@ -50,6 +54,11 @@ public class StepDefinitions extends BaseTest {
     @Given("^User has opened coupon filter UI$")
     public void userHasOpenedCouponFilterUI() {
         CouponPage couponPage = new CouponPage(appiumDriver);
+        activationCounts = couponPage.getActivatedCouponCountFromCouponCenter();
+        log.info("Total not activated coupon count : " + activationCounts[0]);
+        log.info("Total activated count : " + activationCounts[1]);
+        log.info("Total coupon services available : " + couponPage.getCoupons());
+
         couponPage.clickFilterButton();
         String title = couponPage.getFilterUITitle();
         log.info("Filter UI title : " + title);
@@ -59,10 +68,6 @@ public class StepDefinitions extends BaseTest {
     @When("^User checks available coupon that can be activated and taps on the activate button$")
     public void userChecksAvailableCouponThatCanBeActivatedAndTapsOnTheActivateButton() {
         CouponPage couponPage = new CouponPage(appiumDriver);
-        int[] activationCounts = couponPage.getActivatedCouponCountFromCouponCenter();
-        log.info("Total not activated coupon count : " + activationCounts[0]);
-        log.info("Total activated count : " + activationCounts[1]);
-        log.info("Total coupon services available : " + couponPage.getCoupons());
         couponPage.openSelectedCoupon(Integer.parseInt(Constants.COUPON_FILTER_START_INDEX));
 
         activationCountsBefore = couponPage.getActivatedCouponCountFromCouponDetails();

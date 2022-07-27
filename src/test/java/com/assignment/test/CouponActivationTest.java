@@ -21,7 +21,7 @@ import java.time.Duration;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "Feature",
         glue = {"com/assignment/stepDefinition"},
-        plugin = { "pretty", "html:target/cucumber-html-reports.html"},
+        plugin = { "pretty", "html:build/reports/tests/cucumber/cucumber-report.html"},
         monochrome = true
 )
 public class CouponActivationTest {

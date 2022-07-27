@@ -1,0 +1,45 @@
+2022-07-27 22:31:21.319 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 27/07/2022 22:31:21
+2022-07-27 22:32:20.514 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+2022-07-27 22:32:20.590 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run started at : 27/07/2022 22:32:20
+2022-07-27 22:32:35.763 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Coupon center title : Coupons
+2022-07-27 22:32:40.172 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Filter UI title : Filter
+2022-07-27 22:32:40.426 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : ZURÜCKSETZEN
+2022-07-27 22:32:41.136 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Beliebteste Partner mit Coupons
+2022-07-27 22:32:42.113 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
+2022-07-27 22:32:42.114 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 27/07/2022 22:32:42
+2022-07-27 22:35:23.735 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+2022-07-27 22:35:23.773 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run started at : 27/07/2022 22:35:23
+2022-07-27 22:35:28.860 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Coupon center title : Coupons
+2022-07-27 22:35:31.155 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Filter UI title : Filter
+2022-07-27 22:35:31.425 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : ZURÜCKSETZEN
+2022-07-27 22:35:32.129 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Beliebteste Partner mit Coupons
+2022-07-27 22:35:33.099 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
+2022-07-27 22:35:33.099 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 27/07/2022 22:35:33
+2022-07-27 22:41:37.513 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+2022-07-27 22:41:37.538 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run started at : 27/07/2022 22:41:37
+2022-07-27 22:41:42.662 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Coupon center title : Coupons
+2022-07-27 22:41:44.491 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Filter UI title : Filter
+2022-07-27 22:41:44.739 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : ZURÜCKSETZEN
+2022-07-27 22:41:44.992 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Beliebteste Partner mit Coupons
+2022-07-27 22:41:46.009 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
+2022-07-27 22:41:46.010 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 27/07/2022 22:41:46
+2022-07-27 22:43:57.005 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+2022-07-27 22:43:57.019 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run started at : 27/07/2022 22:43:57
+2022-07-27 22:44:03.198 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Coupon center title : Coupons
+2022-07-27 22:44:03.437 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (30)
+2022-07-27 22:44:03.577 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (16)
+2022-07-27 22:44:03.900 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total not activated coupon count : 30
+2022-07-27 22:44:03.900 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total activated count : 16
+2022-07-27 22:44:04.109 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total coupon services available : 15
+2022-07-27 22:44:07.256 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Filter UI title : Filter
+2022-07-27 22:44:07.434 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 15
+2022-07-27 22:44:07.603 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-27 22:44:10.076 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+2022-07-27 22:44:14.936 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 17
+2022-07-27 22:44:15.094 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-27 22:44:21.142 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+2022-07-27 22:44:25.650 [Test worker] ERROR com.assignment.pom.CouponPage - There is no coupon available to activate...
+2022-07-27 22:44:26.541 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Beliebteste Partner mit Coupons
+2022-07-27 22:44:26.733 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Partner mit Coupons
+2022-07-27 22:44:27.577 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
+2022-07-27 22:44:27.577 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 27/07/2022 22:44:27
