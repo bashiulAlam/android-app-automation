@@ -1,0 +1,33 @@
+2022-07-25 13:50:23.061 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+2022-07-25 13:50:23.087 [Test worker] INFO  com.assignment.test.CouponActivationTest - Test run started at : 25/07/2022 13:50:23
+2022-07-25 13:50:23.096 [Test worker] INFO  com.assignment.test.TestName - ---------- Test Name :: Test_001_openCouponCenter :: ----------
+2022-07-25 13:50:26.448 [Test worker] INFO  com.assignment.test.CouponActivationTest - Coupon center title : Coupons
+2022-07-25 13:50:26.461 [Test worker] INFO  com.assignment.test.TestName - ---------- Test Name :: Test_002_filterAndActivateCoupon :: ----------
+2022-07-25 13:50:28.604 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (21)
+2022-07-25 13:50:28.849 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (15)
+2022-07-25 13:50:32.967 [Test worker] INFO  com.assignment.test.CouponActivationTest - Filter UI title : Filter
+2022-07-25 13:50:32.967 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total not activated coupon count : 21
+2022-07-25 13:50:32.967 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total activated count : 15
+2022-07-25 13:50:33.153 [Test worker] INFO  com.assignment.test.CouponActivationTest - Total coupon services available : 35
+2022-07-25 13:50:33.322 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 15
+2022-07-25 13:50:33.942 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-25 13:50:37.033 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
+2022-07-25 13:50:52.294 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 17
+2022-07-25 13:50:52.600 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-25 13:50:58.684 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
+2022-07-25 13:51:03.848 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 19
+2022-07-25 13:51:03.950 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-25 13:51:09.950 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
+2022-07-25 13:51:14.785 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 21
+2022-07-25 13:51:14.886 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-25 13:51:20.883 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 0
+2022-07-25 13:51:25.347 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 23
+2022-07-25 13:51:25.429 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-25 13:51:27.818 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count : 1
+2022-07-25 13:51:29.235 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (1)
+2022-07-25 13:51:29.388 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (0)
+2022-07-25 13:51:32.143 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (0)
+2022-07-25 13:51:32.752 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (1)
+2022-07-25 13:51:33.004 [Test worker] INFO  com.assignment.test.CouponActivationTest - Number of coupons moved from non-activated state : 1
+2022-07-25 13:51:33.006 [Test worker] INFO  com.assignment.test.CouponActivationTest - Number of coupons moved to activated state : 1
+2022-07-25 13:51:33.737 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
