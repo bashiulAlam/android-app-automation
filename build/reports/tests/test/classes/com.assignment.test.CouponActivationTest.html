@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">29.903s</div>
+<div class="counter">1m30.71s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,15 +76,40 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="Activate available coupon"></a>
-<h3 class="failures">Activate available coupon</h3>
+<a name="Open Coupon Center"></a>
+<h3 class="failures">Open Coupon Center</h3>
 <span class="code">
-<pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1967)
-	at com.assignment.utils.Utils.parseTabTitle(Utils.java:9)
-	at com.assignment.pom.CouponPage.getActivatedCouponCountFromCouponDetails(CouponPage.java:65)
-	at com.assignment.stepDefinition.StepDefinitions.userChecksAvailableCouponThatCanBeActivatedAndTapsOnTheActivateButton(StepDefinitions.java:73)
-	at ✽.User checks available coupon that can be activated and taps on the activate button(file:///D:/IntelliJ%20Projects/Android-App-Automation/Feature/ActivateCoupon.feature:9)
+<pre>org.openqa.selenium.StaleElementReferenceException: The element 'By.clazz: android.widget.TextView' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-HMFUJK93', ip: '192.168.31.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [a329b9e3-88f5-492e-8007-e2db11c1357e, getElementText {id=00000000-0000-075d-ffff-ffff0000000f}]
+Capabilities {appium:appActivity: de.payback.app.deeplinks.St..., appium:appPackage: de.payback.client.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: de.payback.app.deeplinks.St..., appPackage: de.payback.client.android, automationName: UiAutomator2, deviceName: My Device, fullReset: false, noReset: true, platformName: android, platformVersion: 10.0, skipDeviceInitialization: true}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A750F, appium:deviceName: 32004d80460d955f, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: 32004d80460d955f, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:skipDeviceInitialization: true, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AppiumDriver:  on ANDROID (a329b9e3-88f5-492e-8007-e2db11c1357e)] -&gt; class name: android.widget.TextView]
+Session ID: a329b9e3-88f5-492e-8007-e2db11c1357e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.getText(&lt;generated&gt;)
+	at com.assignment.pom.LandingPage.getCouponCenterTitle(LandingPage.java:28)
+	at com.assignment.stepDefinition.StepDefinitions.couponCenterUIIsLoaded(StepDefinitions.java:50)
+	at ✽.Coupon center UI is loaded(file:///D:/IntelliJ%20Projects/Android-App-Automation/Feature/ActivateCoupon.feature:5)
 </pre>
 </span>
 </div>
@@ -100,56 +125,95 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">Activate available coupon</td>
-<td class="failures">23.738s</td>
-<td class="failures">failed</td>
+<td class="success">Activate available coupon</td>
+<td class="success">1m23.06s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Open Coupon Center</td>
-<td class="success">6.165s</td>
-<td class="success">passed</td>
+<td class="failures">Open Coupon Center</td>
+<td class="failures">7.648s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>22:43:57.005 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
-22:43:57.019 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run started at : 27/07/2022 22:43:57
+<pre>18:40:27.178 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+18:40:27.212 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run started at : 28/07/2022 18:40:27
 
 Scenario: Open Coupon Center             # Feature/ActivateCoupon.feature:3
   When User taps on coupon center button # com.assignment.stepDefinition.StepDefinitions.userTapsOnCouponCenterButton()
-22:44:03.198 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Coupon center title : Coupons
   Then Coupon center UI is loaded        # com.assignment.stepDefinition.StepDefinitions.couponCenterUIIsLoaded()
+      org.openqa.selenium.StaleElementReferenceException: The element 'By.clazz: android.widget.TextView' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'LAPTOP-HMFUJK93', ip: '192.168.31.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [a329b9e3-88f5-492e-8007-e2db11c1357e, getElementText {id=00000000-0000-075d-ffff-ffff0000000f}]
+Capabilities {appium:appActivity: de.payback.app.deeplinks.St..., appium:appPackage: de.payback.client.android, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: de.payback.app.deeplinks.St..., appPackage: de.payback.client.android, automationName: UiAutomator2, deviceName: My Device, fullReset: false, noReset: true, platformName: android, platformVersion: 10.0, skipDeviceInitialization: true}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A750F, appium:deviceName: 32004d80460d955f, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: 32004d80460d955f, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:skipDeviceInitialization: true, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AppiumDriver:  on ANDROID (a329b9e3-88f5-492e-8007-e2db11c1357e)] -&gt; class name: android.widget.TextView]
+Session ID: a329b9e3-88f5-492e-8007-e2db11c1357e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.getText(&lt;generated&gt;)
+	at com.assignment.pom.LandingPage.getCouponCenterTitle(LandingPage.java:28)
+	at com.assignment.stepDefinition.StepDefinitions.couponCenterUIIsLoaded(StepDefinitions.java:50)
+	at âœ½.Coupon center UI is loaded(file:///D:/IntelliJ%20Projects/Android-App-Automation/Feature/ActivateCoupon.feature:5)
+
 
 Scenario: Activate available coupon                                                       # Feature/ActivateCoupon.feature:7
-22:44:03.437 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (30)
-22:44:03.577 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (16)
-22:44:03.900 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total not activated coupon count : 30
-22:44:03.900 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total activated count : 16
-22:44:04.109 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total coupon services available : 15
-22:44:07.256 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Filter UI title : Filter
+18:40:36.715 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (30)
+18:40:38.859 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (16)
+18:40:39.354 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total not activated coupon count : 30
+18:40:39.354 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total activated count : 16
+18:40:39.627 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total coupon services available : 15
+18:40:43.174 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Filter UI title : Filter
   Given User has opened coupon filter UI                                                  # com.assignment.stepDefinition.StepDefinitions.userHasOpenedCouponFilterUI()
-22:44:07.434 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 15
-22:44:07.603 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
-22:44:10.076 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
-22:44:14.936 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 17
-22:44:15.094 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
-22:44:21.142 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
-22:44:25.650 [Test worker] ERROR com.assignment.pom.CouponPage - There is no coupon available to activate...
-22:44:26.541 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Beliebteste Partner mit Coupons
-22:44:26.733 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Partner mit Coupons
+18:40:43.426 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 15
+18:40:43.606 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+18:40:46.260 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+18:40:55.333 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 17
+18:40:55.487 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+18:41:01.531 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+18:41:09.063 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 19
+18:41:09.208 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+18:41:15.212 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+18:41:24.708 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 21
+18:41:24.866 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+18:41:30.808 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+18:41:37.206 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 23
+18:41:37.301 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+18:41:43.322 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+18:41:49.976 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 25
+18:41:50.043 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+18:41:52.935 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 1
+18:41:54.155 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (1)
+18:41:54.762 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (0)
+18:41:57.512 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (0)
+18:41:57.641 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (1)
   When User checks available coupon that can be activated and taps on the activate button # com.assignment.stepDefinition.StepDefinitions.userChecksAvailableCouponThatCanBeActivatedAndTapsOnTheActivateButton()
-      java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1967)
-	at com.assignment.utils.Utils.parseTabTitle(Utils.java:9)
-	at com.assignment.pom.CouponPage.getActivatedCouponCountFromCouponDetails(CouponPage.java:65)
-	at com.assignment.stepDefinition.StepDefinitions.userChecksAvailableCouponThatCanBeActivatedAndTapsOnTheActivateButton(StepDefinitions.java:73)
-	at âœ½.User checks available coupon that can be activated and taps on the activate button(file:///D:/IntelliJ%20Projects/Android-App-Automation/Feature/ActivateCoupon.feature:9)
-
+18:41:57.948 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Number of coupons moved from non-activated state : 1
+18:41:57.948 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Number of coupons moved to activated state : 1
   Then Coupon has been activated                                                          # com.assignment.stepDefinition.StepDefinitions.couponHasBeenActivated()
-22:44:27.577 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
-22:44:27.577 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 27/07/2022 22:44:27
+18:41:58.787 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
+18:41:58.787 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 28/07/2022 18:41:58
 </pre>
 </span>
 </div>
@@ -186,7 +250,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at Jul 27, 2022 10:44:28 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at Jul 28, 2022 6:42:00 PM</p>
 </div>
 </div>
 </body>

@@ -25,16 +25,4 @@ import java.time.Duration;
         monochrome = true
 )
 public class CouponActivationTest {
-    // set up appium driver and start it
-
-
-    // open the coupon center
-
-
-    // check coupons one by one and activate the first available one
-    // validation is done using the number of activated and non-activated coupons before and after the activation
-    // this difference should be 1
-
-
-    // stop appium driver
 }

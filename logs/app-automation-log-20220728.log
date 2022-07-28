@@ -1,0 +1,34 @@
+2022-07-28 18:40:27.178 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver started...
+2022-07-28 18:40:27.212 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run started at : 28/07/2022 18:40:27
+2022-07-28 18:40:36.715 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (30)
+2022-07-28 18:40:38.859 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (16)
+2022-07-28 18:40:39.354 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total not activated coupon count : 30
+2022-07-28 18:40:39.354 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total activated count : 16
+2022-07-28 18:40:39.627 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Total coupon services available : 15
+2022-07-28 18:40:43.174 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Filter UI title : Filter
+2022-07-28 18:40:43.426 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 15
+2022-07-28 18:40:43.606 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-28 18:40:46.260 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+2022-07-28 18:40:55.333 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 17
+2022-07-28 18:40:55.487 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-28 18:41:01.531 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+2022-07-28 18:41:09.063 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 19
+2022-07-28 18:41:09.208 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-28 18:41:15.212 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+2022-07-28 18:41:24.708 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 21
+2022-07-28 18:41:24.866 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-28 18:41:30.808 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+2022-07-28 18:41:37.206 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 23
+2022-07-28 18:41:37.301 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-28 18:41:43.322 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 0
+2022-07-28 18:41:49.976 [Test worker] INFO  com.assignment.pom.CouponPage - checking coupon no : 25
+2022-07-28 18:41:50.043 [Test worker] INFO  com.assignment.pom.CouponPage - total coupon available : 35
+2022-07-28 18:41:52.935 [Test worker] INFO  com.assignment.pom.CouponPage - available coupon count for activation : 1
+2022-07-28 18:41:54.155 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (1)
+2022-07-28 18:41:54.762 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (0)
+2022-07-28 18:41:57.512 [Test worker] INFO  com.assignment.pom.CouponPage - Not activated coupon tab title : Nicht aktiviert (0)
+2022-07-28 18:41:57.641 [Test worker] INFO  com.assignment.pom.CouponPage - Activated coupon tab title : Aktiviert (1)
+2022-07-28 18:41:57.948 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Number of coupons moved from non-activated state : 1
+2022-07-28 18:41:57.948 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Number of coupons moved to activated state : 1
+2022-07-28 18:41:58.787 [Test worker] INFO  com.assignment.test.BaseTest - Appium driver stopped...
+2022-07-28 18:41:58.787 [Test worker] INFO  com.assignment.stepDefinition.StepDefinitions - Test run ended at : 28/07/2022 18:41:58

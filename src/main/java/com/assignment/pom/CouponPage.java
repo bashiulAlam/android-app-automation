@@ -81,7 +81,7 @@ public class CouponPage extends BasePage {
 
     public void openSelectedCoupon(int index) {
         int availabilityFlag = 0;
-        for (int i = index; i < coupons.size(); i += 2) {
+        for (int i = index; i < coupons.size() * 2; i += 2) {
             log.info("checking coupon no : " + i);
             log.info("total coupon available : " + coupons.size());
             coupons.get(i).click();

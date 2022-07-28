@@ -22,27 +22,28 @@ public class StepDefinitions extends BaseTest {
     public int[] activationCountsAfter = new int[2];
     public int[] activationCounts = new int[2];
 
+    // set up appium driver and start it
     @BeforeAll
     public static void setUp() {
         BaseTest.setUp();
         log.info("Test run started at : " + Utils.getCurrentTime());
     }
 
+    // stop appium driver
     @AfterAll
     public static void tearDown() {
         BaseTest.tearDown();
         log.info("Test run ended at : " + Utils.getCurrentTime());
     }
 
-    /*@Given("^User is logged in$")
-    public void userIdLoggedIn() {}*/
-
+    // open the coupon center
     @When("^User taps on coupon center button$")
     public void userTapsOnCouponCenterButton() {
         LandingPage landingPage = new LandingPage(appiumDriver);
         landingPage.openCouponCenter();
     }
 
+    // validate coupon center by UI title
     @Then("^Coupon center UI is loaded$")
     public void couponCenterUIIsLoaded() {
         LandingPage landingPage = new LandingPage(appiumDriver);
@@ -51,6 +52,7 @@ public class StepDefinitions extends BaseTest {
         Assertions.assertEquals(Constants.COUPON_CENTER_UI_TITLE, title);
     }
 
+    // open filter UI and validate the title
     @Given("^User has opened coupon filter UI$")
     public void userHasOpenedCouponFilterUI() {
         CouponPage couponPage = new CouponPage(appiumDriver);
@@ -65,6 +67,7 @@ public class StepDefinitions extends BaseTest {
         Assertions.assertEquals(Constants.FILTER_UI_TITLE, title);
     }
 
+    // check coupons one by one and activate the first available one
     @When("^User checks available coupon that can be activated and taps on the activate button$")
     public void userChecksAvailableCouponThatCanBeActivatedAndTapsOnTheActivateButton() {
         CouponPage couponPage = new CouponPage(appiumDriver);
@@ -76,6 +79,8 @@ public class StepDefinitions extends BaseTest {
         activationCountsAfter = couponPage.getActivatedCouponCountFromCouponDetails();
     }
 
+    // validation is done using the number of activated and non-activated coupons before and after the activation
+    // this difference should be 1
     @Then("^Coupon has been activated$")
     public void couponHasBeenActivated() {
         int nonActivatedCouponCountDiff = Math.abs(activationCountsAfter[0] - activationCountsBefore[0]);
