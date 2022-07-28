@@ -3,13 +3,14 @@
 
 ## Project Tools Used
 - **Programming Language:** Java (JDK 1.8)
-- **Framework and Tools Used:** Appium, JUnit, Gradle, Apache Log4j Logging
+- **Framework and Tools Used:** Appium, JUnit, Gradle, Apache Log4j Logging, Cucumber
 - **IDE:** Intellij Idea
 
 ## Project Structure
 
 - The project is implemented with POM (Page Object Model) structure where the page classes have been put under: *{project_root}/src/main/java/com/assignment/pom*
-- The test classes have been put under: *{project_root}/src/test/java/com/assignment/test*
+- The test cases have been added using ***Cucumber Gherkin*** format for *Behavior Driven Develeopment (BDD)* supported test cases with the *feature* file located under *{project_root}/Feature* folder and the step definitions of the tests have been written under *{project_root}/src/test/java/com/assignment/stepDefinition* folder  
+- The *cucumber test runner* class has been put under: *{project_root}/src/test/java/com/assignment/test*
 - A properties file have been added to *resources* folder for ease of use of access variables
 - We also have an *utils* package to maintain the configuration variables, constant values and utility methods
 
@@ -53,10 +54,12 @@
 ## Report and Logging
 1. If you run the project from your IDE you can see the results from your IDE console
 2. As we are using *gradle* we will have an HTML report generated after every run which can be found here: *{project_root}/build/reports/tests/test/index.html*`
-3. We have logging enabled for better visualization and ease of troubleshooting in case of any error. Log file can be found here: *{project_root}/logs*
+3. Beside the HTML built in report by *gradle*, we also have generated a *cucumber HTML* report which is generated after every test run and can be found here: *{project_root}/build/reports/tests/cucumber/cucumber-report.html* 
+4. We have logging enabled for better visualization and ease of troubleshooting in case of any error. Log file can be found here: *{project_root}/logs*
 
 ## Observations
 1. The coupons do not have any distinguishable id which can be used in the automation. That is why *REWE* coupons were not easy to differentiate from others. The implementation was designed such way that we open coupon center and look for an available non-activated coupon one by one. When we find one available we activate and check the count of activated coupon increase to validate
-2. The app crashes some time in regular UI transition
-3. The app closes if we press back button from coupon center or opened coupon UI
-4. The app transition sometimes gets slow and we get error like *element is not present in DOM*, I guess this happens when the network connectivity fluctuates
+2. The coupons also have two types of button and a generic locator using android widget class name has been implemented to commonly interact with both the types
+3. The app crashes some time in regular UI transition
+4. The app closes if we press back button from coupon center or opened coupon UI
+5. The app transition sometimes gets slow and we get error like *element is not present in DOM*, I guess this happens when the network connectivity fluctuates
