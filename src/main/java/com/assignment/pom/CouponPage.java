@@ -45,7 +45,8 @@ public class CouponPage extends BasePage {
     @AndroidFindBy(className = "android.widget.TextView")
     List<RemoteWebElement> tabTitles;
 
-    @AndroidFindBy(id = "not_activated_button")
+    //@AndroidFindBy(id = "not_activated_button")
+    @AndroidFindBy(className = "android.widget.Button")
     List<WebElement> activateButton;
 
     @AndroidFindBy(className = "android.widget.LinearLayout")
@@ -98,7 +99,7 @@ public class CouponPage extends BasePage {
             //int activateButtonCount = activateButton.size();
             //log.info("activate button count : " + activateButtonCount);
             if (couponCardCount > 0) {
-                activateButton.get(0).click();
+                activateButton.get(activateButton.size() - 1).click();
                 availabilityFlag = 1;
                 break;
             }
